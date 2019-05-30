@@ -18,8 +18,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>TO DO</h1>
-        <Form />
-        <List tasks={this.state.tasks}/>
+        <Form onUpdate={this.onUpdate} />
+        <List onUpdate={this.onUpdate} tasks={this.state.tasks} />
       </div>
     );
   }

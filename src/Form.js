@@ -3,8 +3,10 @@ import React, { Component } from 'react'
 export default class Form extends Component {
     constructor(props) {
       super(props);
+      // this.props = {}; // esto dentro de Component
       this.state = { name: "", finished: false }
     }
+
     onSubmit = event => {
       console.log('onSubmit');
       const url = 'http://localhost:3000/tasks';
@@ -14,7 +16,7 @@ export default class Form extends Component {
                     headers: { 'Content-Type': 'application/json'} 
                 })
         .then(res => res.json())
-        .then(json => console.log(json))
+        .then(json => this.props.onUpdate()) 
         .catch(err => console.log(err));
       event.preventDefault();
     }

@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "learn react",
+      "finished": false
+    },
+    {
+      "name": "learn vue",
+      "id": 2,
+      "finished": true
+    },
+    {
+      "id": 3
+    },
+    {
+      "name": "learn to code",
+      "finished": false,
+      "id": 4
+    }
+  ]
+}

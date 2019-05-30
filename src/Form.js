@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export default class Form extends Component {
     constructor(props) {
       super(props);
-      // this.props = {}; // esto dentro de Component
       this.state = { name: "", finished: false }
     }
 
@@ -17,6 +16,7 @@ export default class Form extends Component {
                 })
         .then(res => res.json())
         .then(json => this.props.onUpdate()) 
+        .then(json => this.setState({name: ""})) 
         .catch(err => console.log(err));
       event.preventDefault();
     }

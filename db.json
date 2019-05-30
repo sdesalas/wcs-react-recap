@@ -3,42 +3,17 @@
     {
       "id": 1,
       "name": "learn react",
-      "finished": true
+      "finished": false
     },
     {
       "name": "learn vue",
       "id": 2,
-      "finished": true
+      "finished": false
     },
     {
       "name": "learn to code",
       "finished": true,
       "id": 3
-    },
-    {
-      "name": "lavanderia",
-      "finished": true,
-      "id": 4
-    },
-    {
-      "name": "",
-      "finished": true,
-      "id": 5
-    },
-    {
-      "name": "hola",
-      "finished": true,
-      "id": 6
-    },
-    {
-      "name": "hola2",
-      "finished": true,
-      "id": 7
-    },
-    {
-      "name": "funciona!!",
-      "finished": true,
-      "id": 8
     }
   ]
 }
